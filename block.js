@@ -13,6 +13,15 @@ class Block {
         Hash: ${this.hash.substring(0,10)}
         Data: ${this.data}`
     }
+ 
+    static genesis() {
+        /**
+         * Dont need to use a real timestam for the time being
+         * Last hash dummy hash since there is no last hash
+         * Some l337 values for first hash
+         */
+        return new this('Genesis Time', '-----', 'f1r57-h45h', [])
+    }
 }
 
 module.exports = Block;
