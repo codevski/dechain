@@ -17,12 +17,12 @@
   </a>
   <!-- Build Status -->
   <a href="https://gitlab.com/codevski/dechain/pipelines">
-    <img src="https://gitlab.com/towelie/webapp-client/badges/master/build.svg"
+    <img src="https://gitlab.com/codevski/dechain/badges/develop/build.svg"
       alt="Build Status" />
   </a>
   <!-- Test Coverage -->
   <a href="https://gitlab.com/codevski/dechain/pipelines">
-    <img src="https://gitlab.com/towelie/webapp-client/badges/develop/coverage.svg"
+    <img src="https://gitlab.com/codevski/dechain/badges/develop/coverage.svg"
       alt="Test Coverage" />
   </a>
   <!-- Standard -->
