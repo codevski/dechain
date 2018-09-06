@@ -8,29 +8,32 @@ stages:
 Building:
   stage: build
   script:
-  - npm install
-  - npm run build
+    - npm install
+    - npm run build
   only:
-  - develop
-  - /^feature.*/
+    - master
+    - develop
+    - /^feature.*/
 
 Testing:
   stage: test
   script:
-  - npm install
-  - npm run gitlab-test
-  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
+    - npm install
+    - npm run gitlab-test -- --coverage
+  coverage: '/^All files\s+\|\s+\d+\.*\d*\s+\|\s*(\d+\.*\d*)/'
   only:
-  - develop
-  - /^feature.*/
+    - master
+    - develop
+    - /^feature.*/
     
 
 Deploying:
   stage: deploy
   script:
-  - npm install
-  - npm run build
+    - npm install
+    - npm run build
   only:
-  - develop
-  - /^feature.*/
+    - master
+    - develop
+    - /^feature.*/
     
