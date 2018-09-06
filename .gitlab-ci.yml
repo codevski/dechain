@@ -11,6 +11,7 @@ Building:
   - npm install
   - npm run build
   only:
+  - master
   - develop
   - /^feature.*/
 
@@ -21,6 +22,7 @@ Testing:
   - npm run gitlab-test
   coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
   only:
+  - master
   - develop
   - /^feature.*/
     
@@ -31,6 +33,7 @@ Deploying:
   - npm install
   - npm run build
   only:
+  - master
   - develop
   - /^feature.*/
     
