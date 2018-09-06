@@ -20,32 +20,28 @@ stages:
 
 develop:
   stage: build
-  script:
-  - npm install
-  - npm run build
-  only:
-  - develop # or dev, the branch you want to publish
-
-develop:
+    script:
+    - npm install
+    - npm run build
+    only:
+    - develop # or dev, the branch you want to publish
   stage: test
-  script:
-  - npm install
-  - npm run gitlab-test
-  only:
-  - develop # or dev, the branch you want to publish
+    script:
+    - npm install
+    - npm run gitlab-test
+    only:
+    - develop # or dev, the branch you want to publish
 
 features:
+  stage: test
+    script:
+    - npm install
+    - npm run gitlab-test
+    only:
+    - /^feature.*/
   stage: build
-  script:
-  - npm install
-  - npm run build
-  only:
-  - /^feature.*/
-
-features:
-  stage: test
-  script:
-  - npm install
-  - npm run gitlab-test
-  only:
-  - /^feature.*/
+    script:
+    - npm install
+    - npm run build
+    only:
+    - /^feature.*/
