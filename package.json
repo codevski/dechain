@@ -4,13 +4,18 @@
   "description": "dechain",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll",
+    "dev-test": "nodemon dev-test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://gitlab.com/codevski/dechain.git"
   },
-  "keywords": ["blockchain", "dechain", "decoin"],
+  "keywords": [
+    "blockchain",
+    "dechain",
+    "decoin"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -18,6 +23,10 @@
   },
   "homepage": "https://gitlab.com/codevski/dechain#README",
   "devDependencies": {
+    "jest": "^23.5.0",
     "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
   }
 }
