@@ -41,4 +41,4 @@
 </div>
 
 ## License
-[Copyright](https://gitlab.com/codevski/dechain/blob/master/LICENSE.md)
+[MIT](https://gitlab.com/codevski/dechain/blob/master/LICENSE.md)
