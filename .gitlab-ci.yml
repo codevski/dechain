@@ -20,7 +20,7 @@ Testing:
   script:
   - npm install
   - npm run gitlab-test
-  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
+  coverage: '/^All files\s+\|\s+\d+\.*\d*\s+\|\s*(\d+\.*\d*)/'
   only:
   - master
   - develop
