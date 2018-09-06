@@ -11,8 +11,8 @@
 
 <div align="center">
   <!-- NPM version -->
-  <a href="https://nodejs.org/en/blog/release/v6.5.0/">
-    <img src="https://img.shields.io/badge/npm-6.5.0-blue.svg"
+  <a href="https://nodejs.org/en/blog/release/v10.9.0/">
+    <img src="https://img.shields.io/badge/npm-10.9.0-blue.svg"
       alt="NPM version" />
   </a>
   <!-- Build Status -->
