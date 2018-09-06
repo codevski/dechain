@@ -1,0 +1,51 @@
+image: node:10.9.0 # can be upgraded, depending on your node version used
+
+stages:
+  - build
+  - test
+  # - deploy
+
+# pages:
+#   stage: deploy
+#   script:
+#   - npm install
+#   - npm run build
+#   - rm -rf public
+#   - mv build public
+#   artifacts:
+#     paths:
+#     - public # mandatory, other folder won't work
+#   only:
+#   - master # or dev, the branch you want to publish
+
+develop:
+  stage: build
+  script:
+  - npm install
+  - npm run build
+  only:
+  - develop # or dev, the branch you want to publish
+
+develop:
+  stage: test
+  script:
+  - npm install
+  - npm run test
+  only:
+  - develop # or dev, the branch you want to publish
+
+features:
+  stage: build
+  script:
+  - npm install
+  - npm run build
+  only:
+  - /^feature.*/
+
+features:
+  stage: test
+  script:
+  - npm install
+  - npm run test
+  only:
+  - /^feature.*/
