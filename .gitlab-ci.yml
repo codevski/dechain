@@ -19,6 +19,7 @@ Testing:
   script:
   - npm install
   - npm run gitlab-test
+  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
   only:
   - develop
   - /^feature.*/
