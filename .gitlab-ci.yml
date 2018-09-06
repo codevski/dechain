@@ -1,0 +1,35 @@
+image: node:10.9.0 # can be upgraded, depending on your node version used
+
+stages:
+  - build
+  - test
+  - deploy
+  
+Building:
+  stage: build
+  script:
+  - npm install
+  - npm run build
+  only:
+  - develop
+  - /^feature.*/
+
+Testing:
+  stage: test
+  script:
+  - npm install
+  - npm run gitlab-test
+  only:
+  - develop
+  - /^feature.*/
+    
+
+Deploying:
+  stage: deploy
+  script:
+  - npm install
+  - npm run build
+  only:
+  - develop
+  - /^feature.*/
+    
