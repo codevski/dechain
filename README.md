@@ -16,10 +16,6 @@
       alt="NPM version" />
   </a>
   <!-- Build Status -->
-  <a href="https://gitlab.com/codevski/dechain/pipelines">
-    <img src="https://gitlab.com/codevski/dechain/badges/master/build.svg"
-      alt="Build Status" />
-  </a>
   <!-- Test Coverage -->
   <a href="https://gitlab.com/codevski/dechain/pipelines">
     <img src="https://gitlab.com/codevski/dechain/badges/master/coverage.svg"
@@ -39,6 +35,3 @@
     contributors
   </a>
 </div>
-
-## License
-[MIT](https://gitlab.com/codevski/dechain/blob/master/LICENSE.md)
